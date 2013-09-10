@@ -2,7 +2,7 @@
 title: More on Factory Method (2) 
 layout: post
 categories: notes
-tags: solutions FM
+tags: solutions factory
 ---
 
 # Administrivia

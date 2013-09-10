@@ -16,10 +16,11 @@ author :
   twitter : registered99
   feedburner : registered99
 
-markdown: redcarpet
+markdown: redcarpet 
+
 pygments: true
 redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data", "strikethrough"]
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data", "strikethrough", "footnotes"]
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 

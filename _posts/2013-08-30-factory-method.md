@@ -2,7 +2,7 @@
 title: More on Factory Method  
 layout: post 
 categories: notes
-tags: homework FM
+tags: homework factory
 ---
 
 # Administrivia 30 August 2013
@@ -49,11 +49,11 @@ with the fields correctly initalised with either form on String.
 There are two major variations
 * the **Creator** provides a *default implementation* (which may be overridden)
 
-``` java
+~~~ java
 public Product makeProduct() {
 	return new DefaultProduct();
 }
-```
+~~~
 
 This style is useful when there is a *reasonable* choice for a default product class. Note: in this case, the **Creator** need not be an abstract class. 
 
@@ -70,24 +70,26 @@ Note: there are many who believe this is *not* an example of FM. It is often cal
 A *single* PFM (or SF) can create and return instances of many **ConcreteProduct** classes; the class of the object returned is based on the actual parameter supplied. 
 
 ### Creator implements PFM
-```java
+
+~~~ java
  public Product makeProduct( TypeCode type ) {
  	if type.equals( TypeA ) return new ProductTypeA();
  	if type.equals( TypeB ) return new ProductTypeB();
  	
  	throw new NoSuchProductException( type );
  }
-```
+~~~
 
 ### _Sub_Creator re-implement PFM
-``` java
+
+~~~ java
 public Product makeProduct( TypeCode type ) {
 	if type.equals( TypeA ) return new ProductTypeA2();
 	if type.equals( TypeC ) return new ProductTypeC();
 	
 	return super.makeProduct( type );
 }
-```
+~~~
 
 ### Discussion on PFM
 * The **SubCreator** can override the **CProduct** for a given TypeCode that is *already* being handled by the **Creator**. This can lead to confusion, or be really cool, depending on your perspective. 

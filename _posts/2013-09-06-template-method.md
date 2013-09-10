@@ -2,7 +2,7 @@
 title: Template Method 
 layout: post
 categories: notes 
-tags: template
+tags: template factory homework
 ---
 # Administrivia
 * Read: Template Method(325)
@@ -124,3 +124,34 @@ Certain steps of this process are *invariant*, while others (3, 5, & 7)
 depend on the *kind* of cake being made. The *overall* algorithm is the
 same in all cases; we just want to customise how certain steps are
 carried out. 
+
+# HW 3 & HW 4
+
+## Homework #2: due Wednesday (11 SEP)
+As you may know, the sort() method from Java's Collections class — which
+takes an appropriate Comparator object for the type of data in the
+collection — performs a merge sort. The Java Design Patterns Workbook
+claims that because one step of the merge sort algorithm is being
+customized using a Comparator, that it is an example of Template Method.
+What do you think? Justify your answer. [200,400] words.
+
+## Homework #3: due Wednesday
+Implement a base class Magnitude; instance can be compared to each
+other. __Class Magnitude may not have any data members__! It shall, support
+the comparison operations:
+
+* `lessThan( m:Magnitude ): bool`
+* `lessThanEqualTo( m:Magnitude ): bool`
+* `equalTo( m:Magnitude ): bool`
+* `greaterThanEqualTo( m:Magnitude ): bool`
+* `greaterThan( m:Magnitude ): bool`
+* `notEqual( m:Magnitude ): bool`
+
+Note: don't add any other methods to the base class Magnitude; they
+aren't necessary and probably will defeat the purpose of the assignment.
+
+### Homework #3: update
+Seems I left out an important detail which made the assignment trivial
+to circumvent... Class Magnitude may not have any data members! Sorry
+about the omission. The description has been updated to include that
+restriction.
