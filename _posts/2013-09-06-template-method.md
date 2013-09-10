@@ -62,7 +62,7 @@ subclassing -- it's just the compiler generating the subclass, rather than
 the programmer). 
 
 ``` java
-class Creatpr<P extend Product> {
+class Creator<P extend Product> {
 	// - do what needs to be done, sirs
 	public Product makeProduct() {
 		return new P();
