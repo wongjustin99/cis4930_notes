@@ -2,7 +2,7 @@
 layout: post
 title: "Template Method (2)"
 description: ""
-category: template
+category: notes
 tags: template hw
 ---
 {% include JB/setup %}

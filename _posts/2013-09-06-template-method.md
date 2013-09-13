@@ -4,6 +4,8 @@ layout: post
 categories: notes 
 tags: template factory homework
 ---
+{% include JB/setup %}
+
 # Administrivia
 * Read: Template Method(325)
 

@@ -4,6 +4,7 @@ layout: post
 categories: notes
 tags: homework factory
 ---
+{% include JB/setup %}
 
 # Administrivia 30 August 2013
 * HW due on Wednesday, Sept 4

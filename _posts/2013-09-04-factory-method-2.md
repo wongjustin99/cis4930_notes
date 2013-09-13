@@ -2,8 +2,9 @@
 title: More on Factory Method (2) 
 layout: post
 categories: notes
-tags: solutions factory
+tags: solutions factory template
 ---
+{% include JB/setup %}
 
 # Administrivia
 * Read: Template Method (325)

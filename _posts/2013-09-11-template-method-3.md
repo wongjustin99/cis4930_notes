@@ -2,9 +2,10 @@
 layout: post
 title: "Template Method (3)"
 description: "Finish up Template Method, HW3 solution, and intro to Strategy"
-category: 
+category: notes
 tags: homework solutions template strategy
 ---
+{% include JB/setup %}
 
 # Administrivia
 
