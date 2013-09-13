@@ -12,7 +12,7 @@ tags: template hw
 * Read: Strategy (315)
 * HW 2 & 3 online (due Wednesday 9/11)
 
-# Template Method (325)
+# Template Method (325) continued
 
 ## Overview of Implementing TM
 

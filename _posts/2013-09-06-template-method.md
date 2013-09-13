@@ -150,6 +150,27 @@ the comparison operations:
 Note: don't add any other methods to the base class Magnitude; they
 aren't necessary and probably will defeat the purpose of the assignment.
 
+### Classes Currency & CartPoint
+
+To prove the correctness of your implementation, you shall implement
+two subclasses:
+
+* Currency — represents money
+  * the magnitudes being compared are currency amounts (doubles)
+* CartPoint — represents points on the Cartesian plane
+  * the magnitudes being compared are distances from the origin (double)
+ 
+and driver programs to make it all go. Deliverables: standard stuff +
+source + output.
+ 
+*Note 1*: the only operation that your subclasses are allowed to
+override is lessThan().
+
+*Note 2*: Magnitude is meant to implement an inheritable
+functionality, __NOT__ a define a type (with multiple implementations).
+The methods are meant to compare magnitudes of the same class:
+comparing CartPoint to Currency is nonsense.
+
 ### Homework #3: update
 Seems I left out an important detail which made the assignment trivial
 to circumvent... Class Magnitude may not have any data members! Sorry
