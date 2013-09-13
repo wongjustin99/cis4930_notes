@@ -1,6 +1,6 @@
 ---
-title: More on Factory Method (2) 
 layout: post
+title: More on Factory Method (2) 
 categories: notes
 tags: solutions factory template
 ---

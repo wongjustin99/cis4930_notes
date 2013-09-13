@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Strategy Continued"
-description: "More on Strategy, and HW02 redux/solutions"
+description: "More on Strategy, HW02 redux/solutions, State pattern"
 category: notes
-tags: strategy homework solutions 
+tags: strategy homework solutions state
 ---
 {% include JB/setup %}
 
@@ -125,4 +125,24 @@ splitting hairs, why do the GoF mention Functors in their discussion of
 the `Command` pattern, but completely ignore them when discussing
 `Strategy`? 
 
+* Davis thinks they did not overlook this, because the consequences of
+  using a Functor are different than using a Strategy. The whole point
+  of using Strategy is using subclassing. 
 
+# State (305)
+
+## Intent
+
+Allow an object to alter its behaviour when its internal state changes.
+The object will appear to change its class. 
+
+## Applicability
+
+Two main cases where it is usually applicable: 
+
+* Use it when an object's behaviour is *state-dependent* -- where the
+  object's state is determined at runtime, and may change. 
+* Use when state-dependent behaviours may be implemented by *multiple*
+  operations. 
+  * i.e., when an object changes state, the behaviour of multiple
+    operations may be affected. 

@@ -1,6 +1,6 @@
 ---
-title: Template Method 
 layout: post
+title: Template Method 
 categories: notes 
 tags: template factory homework
 ---
