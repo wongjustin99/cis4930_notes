@@ -93,6 +93,10 @@ steps to subclasses.
 Template method lets subclasses redefine certain steps of an algorithm
 without changing the algorithm's structure. 
 
+## Structure
+
+![](http://www.silversoft.net/docs/dp/hires/Pictures/fmeth049.gif "Structure of Template Method")
+
 ## Initial comments
 * one of the most frequently used design patterns
 * it's an example of "good" inheritance

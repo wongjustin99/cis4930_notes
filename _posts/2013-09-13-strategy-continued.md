@@ -14,7 +14,8 @@ tags: strategy homework solutions state
 # Strategy (315)
 
 ## Structure
-["UML diagram of participants"]()
+!["UML diagram of
+participants"](http://www.silversoft.net/docs/dp/hires/Pictures/strat011.gif "Structure of Strategy")
 
 ## Usage
 
@@ -135,6 +136,11 @@ the `Command` pattern, but completely ignore them when discussing
 
 Allow an object to alter its behaviour when its internal state changes.
 The object will appear to change its class. 
+
+## Structure
+
+![](http://www.silversoft.net/docs/dp/hires/Pictures/state-eg.gif
+"Structure of State")
 
 ## Applicability
 
