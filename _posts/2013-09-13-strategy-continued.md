@@ -1,8 +1,13 @@
 ---
 layout: post
-title: "Strategy Continued"
+title: "Strategy Continued and State"
 description: "More on Strategy, HW02 redux/solutions, State pattern"
 category: notes
+
+
+ 
+  
+  
 tags: strategy homework solutions state
 ---
 {% include JB/setup %}
@@ -111,6 +116,11 @@ useful, even in a language that has function pointers -- like C++.
     * they are useful because they *are* objects, and have state (and
       may have additional operations). 
 
+
+
+ 
+  
+  
 There are a lot of people who would argue that the use of `Comparator`
 by `sort()` is an example of the `Strategy` pattern. However, I would
 argue that it is really an example of the use of a fucntor, because it
@@ -152,3 +162,5 @@ Two main cases where it is usually applicable:
   operations. 
   * i.e., when an object changes state, the behaviour of multiple
     operations may be affected. 
+
+
