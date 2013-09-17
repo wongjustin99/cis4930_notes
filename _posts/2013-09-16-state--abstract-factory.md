@@ -15,7 +15,7 @@ tags: [abstract factory state hw]
 
 ## Intent
 
-Allow an object to alter its behaviur when its internal state changes.
+Allow an object to alter its behaviour when its internal state changes.
 The object will appear to change its class. 
 
 ## Applicability (cont'd)
@@ -67,7 +67,7 @@ In terms of this specific implementation:
   * similar control structures exist in other methods. 
   * state transitions are *embedded* in those methods. 
 
-From a code understanding & maitenance perspective: 
+From a code understanding & maintenance perspective: 
   
   * It's relatively hard to grasp the relationship between states
     *because* the transitions are buried in the code. 
@@ -90,7 +90,7 @@ Structure")
 
 ## Example: translated to State pattern
 
-The State pattern encapsulated state-dependent behavioru in 
+The State pattern encapsulated state-dependent behaviour in 
 *__separate__ state objects* 
 
 ``` java

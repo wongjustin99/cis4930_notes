@@ -35,7 +35,7 @@ participants"](http://www.silversoft.net/docs/dp/hires/Pictures/strat011.gif "St
   - specified as a *type parameter* (when `Context` is a
     generic/template/parametric class)
 
-* Any time the client needs the results of hte algorithm, it forwards
+* Any time the client needs the results of the algorithm, it forwards
   the request to the `CStrategy`. 
 
 ## Implementation
@@ -123,7 +123,7 @@ useful, even in a language that has function pointers -- like C++.
   
 There are a lot of people who would argue that the use of `Comparator`
 by `sort()` is an example of the `Strategy` pattern. However, I would
-argue that it is really an example of the use of a fucntor, because it
+argue that it is really an example of the use of a functor, because it
 is being used to parameterise an *operation* rather than an *object*. 
 
 In the spirit of full disclosure, there are some that believe that
