@@ -3,12 +3,7 @@ layout: post
 title: "Strategy Continued and State"
 description: "More on Strategy, HW02 redux/solutions, State pattern"
 category: notes
-
-
- 
-  
-  
-tags: strategy homework solutions state
+tags: strategy homework redux state
 ---
 {% include JB/setup %}
 

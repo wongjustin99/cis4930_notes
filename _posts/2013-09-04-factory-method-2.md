@@ -2,7 +2,7 @@
 layout: post
 title: More on Factory Method (2) 
 categories: notes
-tags: solutions factory template
+tags: redux factory template
 ---
 {% include JB/setup %}
 
