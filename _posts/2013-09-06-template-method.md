@@ -2,7 +2,7 @@
 layout: post
 title: Template Method 
 categories: notes 
-tags: template factory homework
+tags: [template, factory, homework]
 ---
 {% include JB/setup %}
 

@@ -3,7 +3,7 @@ layout: post
 title: "State (2) & Abstract Factory"
 description: ""
 category: notes
-tags: state [abstract factory] hw redux solutions
+tags: [state, abstract factory, hw, redux, solutions]
 ---
 {% include JB/setup %}
 

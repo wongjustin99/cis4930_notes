@@ -3,7 +3,7 @@ layout: post
 title: "Template Method (2)"
 description: ""
 category: notes
-tags: template homework
+tags: [template, homework]
 ---
 {% include JB/setup %}
 

@@ -2,7 +2,7 @@
 layout: post 
 title: Factory Method (2)
 categories: notes
-tags: homework factory
+tags: [homework, factory]
 ---
 {% include JB/setup %}
 
