@@ -2,8 +2,8 @@
 layout: post
 title: "State & Abstract Factory"
 description: ""
-category: notes hw
-tags: [abstract factory state hw]
+category: notes
+tags: abstract factory state hw
 ---
 {% include JB/setup %}
 

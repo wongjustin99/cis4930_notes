@@ -2,8 +2,8 @@
 layout: post
 title: "State Continued - 3"
 description: ""
-category: notes solutions 
-tags: [state abstract_factory hw redux]
+category: notes
+tags: state abstract_factory hw redux solutions
 ---
 {% include JB/setup %}
 
