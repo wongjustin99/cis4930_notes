@@ -1,6 +1,6 @@
 ---
 layout: post 
-title: More on Factory Method  
+title: Factory Method (2)
 categories: notes
 tags: homework factory
 ---

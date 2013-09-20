@@ -1,6 +1,6 @@
 ---
 layout: post
-title: More on Factory Method (2) 
+title: Factory Method (3)
 categories: notes
 tags: redux factory template
 ---

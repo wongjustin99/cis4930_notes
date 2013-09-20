@@ -3,7 +3,7 @@ layout: post
 title: "Abstract Factory vs. Factory Methods"
 description: "The difference between the two"
 category: personal
-tags: abstract factory
+tags: [abstract factory]
 ---
 {% include JB/setup %}
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Strategy Continued and State"
+title: "Strategy (2) and State"
 description: "More on Strategy, HW02 redux/solutions, State pattern"
 category: notes
 tags: strategy homework redux state

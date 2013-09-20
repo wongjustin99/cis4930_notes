@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Template Method (3)"
+title: "Template Method (3) & Strategy"
 description: "Finish up Template Method, HW3 solution, and intro to Strategy"
 category: notes
 tags: homework redux template strategy
