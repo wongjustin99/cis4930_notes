@@ -93,7 +93,7 @@ ACCIDENT )
 1. Implmentation techniques 3 & 5 require adding *something* to configure
    the AF. Should that knowledge be localised? Where? [200,400]
 2. ~~Why is it easier to extend a SF-based AF than a FM-based one to
-   support addtional operations?~~ (Struck, cos we don't need to do it,
+   support addtional product types?~~ (Struck, cos we don't need to do it,
 MAN!)
 
 # Builder (97)
