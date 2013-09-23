@@ -20,8 +20,8 @@ tags: [abstract factory, builder, homework]
 ### 1. Use inheritance to override the FMs
 
 ### 2. Use inheritance to override the initialiser
-  a. FMs are written in terms of Class objects
-  b. FMs written in terms of Prototype objects
+  1. FMs are written in terms of Class objects
+  2. FMs written in terms of Prototype objects
 
 * `Creator` is abstract and has instance variables for each `Product`
   type
@@ -39,10 +39,10 @@ this.fooClassPrototype = new DaveCoBar();
 
 ### 3. Parameterise the AF
 
-a. FMs are written in terms of Class objects
+1. FMs are written in terms of Class objects
   * similar to #2, except the AF's initialiser is parameterised with
     objects that will be used to instantiate the Products. 
-b. FMs are written in terms of Prototype objects
+2. FMs are written in terms of Prototype objects
 
 ### 4. Parameterise the AF with a Product family name
 
