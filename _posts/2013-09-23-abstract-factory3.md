@@ -1,0 +1,127 @@
+---
+layout: post
+title: "Abstract Factory(3)"
+description: "more on abstract factory"
+category: notes
+tags: [abstract factory, builder, solutions]
+---
+{% include JB/setup %}
+# Administrivia
+
+* Read: Prototype(117)
+
+# Builder (97)
+
+## In action (cont.)
+
+> Q: Why doesn't the `Director` get the `Product` from the `Builder`?
+
+A: The `Director` has no clue to the `Product`'s type! The `Director`
+knows only the *process* used for creation, *not* what is actually being
+created. 
+
+![UML diagram of pizzaBuildre, bla]()
+
+The `Director` is reusable -- we can use the same *process* to create
+different representations. 
+
+A `CBuilder` is reusable -- it encapsulates knowledge about how to
+assemble a particular `Product` *representation*.
+
+This scheme provides a strong *encapsulation boundary*: the
+representation is decoupled from the construction process. 
+
+The `Builder` pattern provides fine-grained control over *how* an
+object(-structure) [He is putting structure in parens because maybe
+we're just instantiating an object, and configuring an object.] is
+assembled/configured. All the other GoF *Creational Patterns* allow one
+to request only a particular `Product` type -- they don't allow one to get
+involved with the assembly-configuration process. 
+
+Note: That's not to say that the implementer of one of those other
+patterns cannot specify how an oject, or object structure is created,
+because they most certainly can. 
+
+ex: 
+
+``` java
+Foo makeFoo() {
+  Foo f = new DaveCoFoo();
+  f.addBell( new LargeClangyBell() );
+  f.addWhistle( new ShrillAnnoyingWhistle() );
+  return f;
+  // returns a foo that is configured with Bells & Whistles. 
+}
+```
+
+-- but how this differs is that when `makeFoo()` is called, one *always*
+gets a `DaveCoFoo()` configured with a `LargeClangyBell` and
+`ShrillAnnoyingWhistle`. Clients of this method  weren't given the opportunity to:
+
+* customise the accessories, nor
+* change the representation
+
+# HW05 redux
+
+> 1. implementation of techniques 3 & 5 require *something* to configure
+   the AF. Should that knowledge be localised? 
+
+A: 
+
+> *yupperdoodles!*
+
+If so, where?
+
+either:
+
+  * in a *subclass* of the AF, *or*
+    * *the* (subclassed) AF's constructor would know what `Product`
+      types to use
+  * in a FM [better choice]
+
+Aside:
+
+``` java
+class MealFactory<BudgetMeal, RegularMeal, PlurgeMeal>
+{
+  BudgetMeal b;
+  RegularMeal r;
+  PlurgeMeal p;
+
+  MealFactory(){
+    b = new BudgetMeal();
+    r = new RegularMeal();
+    p = new PlurgeMeal();
+  }
+
+  BudgetMeal makeBudgetMeal() {
+    return b.clone();
+  }
+
+  // ...
+}
+```
+
+Should localise it to make it reusable, and gives a clue where to look
+when you want to make changes. 
+
+Example of how to localise it: 
+
+``` java
+// example of parameterising the constructor 
+FruitFactory makeFruitFactory() {
+  return new FruitFactory( new Apple(), new Peach(), ... );
+}
+
+// parameterising the class
+FruitFactory makeFruitFactory() {
+  return new FruitFactory<Apple, Peach, ..>();
+}
+```
+
+> 2. Why is it easier to extend a SF-based AF than a FM-based one to
+> support additional product types? 
+
+Adding a new method to support the `Product` type will require that the
+base class/interface be modified, necessiating the updating of *all* of
+its subclasses, so that they support the new operation(s). 
