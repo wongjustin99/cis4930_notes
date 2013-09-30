@@ -46,9 +46,12 @@ with the fields correctly initalised with either form on String.
 *Is this an example of FM?* [200,400] words
 
 # Implementation
+
 ## 1. GoF canonical
+
 There are two major variations
-* the **Creator** provides a *default implementation* (which may be overridden)
+
+### the **Creator** provides a *default implementation* (which may be overridden)
 
 ~~~ java
 public Product makeProduct() {
@@ -58,7 +61,8 @@ public Product makeProduct() {
 
 This style is useful when there is a *reasonable* choice for a default product class. Note: in this case, the **Creator** need not be an abstract class. 
 
-* the **Creator** is abstract and declares an abstract method: 
+### the **Creator** is abstract and declares an abstract method: 
+
 ` abstract public Product makeProduct(); `
 
 In this case, the **ConcreteCreator** *must* implement the FM
