@@ -21,7 +21,7 @@ tags: [homework, factory]
 # Structure & Participants 
 *insert graph from phone here made in UMLet*
 
-Instances of Concrete**Creator**X *make* and/or *use/work-with* instances of Concrete**Product**X
+Instances of Concrete **Creator**X *make* and/or *use/work-with* instances of Concrete **Product**X
 # HW 1
 1. Explain how the *intent* of **FM** is different from **BorderFactory**'s intent.
 (100 min, 400 max) *remember the deliverables format!*
