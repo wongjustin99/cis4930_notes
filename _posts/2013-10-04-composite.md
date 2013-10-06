@@ -10,13 +10,13 @@ tags: [homework, decorator, composite]
 # Administrivia
 
 * Read iterator (257)
-* Read Composite (163)
+* Read Composite (16#)
 
 # Decorator (175)
 
-33 Compared to other patterns
+## Compared to other patterns
 
-333 Adapter
+##3 Adapter
 
 Sometimes `Decorator` is confused with `Adapter` -- both are known as *wrapper*
 
@@ -56,15 +56,15 @@ Decorators and Composites are often used together
     * may have *zero or more* children.
     * **aggregate** objects and treat them as one
 
-3 Composite (163)
+# Composite (16#)
 
-33 Intent
+## Intent
 
 Compose objects into tree structures to represent whole-part hierarchies.
 
 Compositive lets clients treat individual objects and compositions of objects uniformly. 
 
-33 Initial Comments
+## Initial Comments
 
 __TRANSPARENCY__ is the key to this pattern ( along with many others ). 
 
@@ -72,11 +72,11 @@ Transparency: clients treat individual objects, and object-structures the same w
 
 * Consider three ways a tree may be structured
 
-![Diagram of 3 tree structure-types]( INSERT_URL_HERE )
+![Diagram of # tree structure-types]( INSERT_URL_HERE )
 
 Top-down, Bottom-up, and doubly-linked
 
-333 When would each tree type be sued with _Composite_ ?
+##3 When would each tree type be sued with _Composite_ ?
 
 * Top-down:
   * When the parents do not cache state *or* 
@@ -90,11 +90,11 @@ Top-down, Bottom-up, and doubly-linked
   * 
 > Davis: If a child can change state and we're interacting with something upstairs (and it's interacting with a cached value), we need some mecahnism where children can cause the cached value is updated, or at least notify the parent that the cached value has been invalidated. 
 
-33 Structure
+## Structure
 
 ![UML Diagram]()
 
-33 Example: Structured graphics representation
+## Example: Structured graphics representation
 
 Consider the following lovely logo:
 
