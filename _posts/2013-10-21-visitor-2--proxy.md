@@ -47,14 +47,14 @@ type.
 ``` java
 Class Foo {
   public void accept( Visitor v ) {
-    v.visitorFoo( this );
+    v.visitFoo( this );
     // ...
   }
 }
 
 Class Bar {
   public void accept( Visitor v ) {
-    v.visitorBar( this );
+    v.visitBar( this );
     // ...
   }
 }
