@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ""
+title: "Composite"
 description: ""
 category: notes
 tags: [homework, decorator, composite]
