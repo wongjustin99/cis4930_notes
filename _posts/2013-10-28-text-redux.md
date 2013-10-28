@@ -1,0 +1,142 @@
+---
+layout: post
+title: "Text Redux"
+description: ""
+category: 
+tags: []
+---
+{% include JB/setup %}
+
+# Administrivia
+
+* Read Adapter (139)
+* no class this Frigid Friday.
+
+# Adapter (139)
+
+## Intent
+
+Convert the interface of a class into another interface that
+clients expect. Adapter lets classes work together that couldn't
+otherwise because of incompatible interfaces. 
+
+## Varieties
+
+![Varieties photo]()
+
+There are four: class adapters, (tailored) adapter, pluggable
+adapters, and object adapters
+
+### Tailored Adapters
+
+There is an *existing* class that has the functionality we need, but it
+lacks the required interface. 
+
+Simple example: a `LinkedList` won't (or at least, shouldn't) have
+operations named `push()`, `pop()`, & `peek()`, but it almost certainly
+will have equivalent functionalities. 
+
+#### Tailored class adapter 
+
+Define a subclass of the existing class (e.g., `LinkedList`) that
+implements the desired interface (`Stack`), in terms of the existing
+class' operations: 
+
+![Implementation of a Stack/LinkedList]()
+
+> Davis: `decaudate()` means to cut something's tail off
+
+The `Adaptor` is the stack, the `Adaptee` is the `LinkedList`
+
+Note: some languages (e.g., C++) support the notion of *private
+(implementation) inheritance*. 
+
+> Davis: It's italicised because it doesn't make sense to privately
+> inherit something's interface, since the whole point is the make
+> yourself publically able to use that interface.
+
+* Also, the __type__ is *not* inherited, only the code is. 
+  - in C++, all the operations become `private` in the subclass
+    *regardless* of their original access modifiers. Hence, if using
+private inheritance, `MyStack` would need to re-implement the
+`isEmpty()` operations. 
+    * Why? It's because the inherited one would be private, and
+      inaccessible for others to touch. 
+
+* Tailored Class Adapter summary
+  * con: can only adapt a class (and *not* its subclasses)
+    - this is because it's __explicitly__ adapting a certain class
+  * pro: avoids message forwarding overhead
+
+#### Tailored object adapter
+
+Define a class that implements the desired interface (e.g., `Stack`) in
+terms of forwarding calls to the existing class's operations. Relies on
+object composition 
+
+> Davis: We are adapting an __interface__ and not a __class__. 
+
+### Pluggable Adapters
+
+> Davis: Slow, probably on exam 
+
+The class that the (client) code is meant to work with is *unknown*!
+We'll define an interface so that we can work with this unknown class.
+In other words, we want to write a class _today_, that in order to do
+its job, we'll need to work with classes that we can't forsee. 
+
+The implementor (of the class that we are writing today) must identify
+*all* the operations that the `Adaptee` needs to support in order for
+*this* class to do its job. We will write code in terms of those
+(unimplemented) operations. 
+
+> Davis: "I need to write some code. I'm going to define the interface that
+> anything that works with this is going to need to look like, so that
+> anyone who wants to use it can adapt themselves to this."
+
+> CoolGuy123: Programmer writes interface, then other people program to that?
+
+#### Pluggable Class Adapter
+
+Example from the BOEK 
+
+> Tall Guy: Looks like template method. 
+
+* Adapter: DirectoryTreeDisplay
+* Adaptee: FileSystemEntity
+* Client & Target Interface: TreeDisplay
+  - defines & uses the target interface
+
+* `TreeDisplay` defines
+  * the _target interface_, and
+  * since it also __uses__ the target interface, it is also the (target
+    interface's) _client_
+
+> Davis: Where is it defining the Target Interface? 
+
+The two abstract methods.
+
+* `FileSystemEntity` is the `Adaptee`
+  * it is the "unforeseen" class whose abilities we now want to use in
+    the context of displaying trees
+
+* `DirectoryTreeDisplay`
+  * is the _Adapter_
+  * enables the _Client_ (`TreeDisplay`) to use the functionalities of
+    the `AdAaptee` (FileSystemEntity) by adapting it to the target
+interface. 
+
+Note: this __all__ hinges on the abstract class operations -- which ae
+implemented by the `Adapter`. 
+
+
+
+
+
+
+
+
+
+
+
+
