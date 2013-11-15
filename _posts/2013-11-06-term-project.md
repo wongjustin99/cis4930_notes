@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Term Project"
+title: "Term Project & Command & Observer"
 description: ""
 category: notes
 tags: [project, command, observer]
@@ -32,6 +32,7 @@ tags: [project, command, observer]
 		- for all greek characters
 		- be able to have other languages besides C++
 			- know keywords, etc. 
+
 # Command (233) cont.
 
 ## A continuum of sophistication
@@ -47,6 +48,7 @@ name = dialogue.selectFile();
 file = new File( name );
 doc = new Document( file );
 app.addDocument( doc );
+```
 
 ## Cool super powers
 
