@@ -37,11 +37,11 @@ tags: [project, command, observer]
 
 ## A continuum of sophistication
 
-The pattern allows for everything from a simple `Command` -- which binds a specific request to a specific procedure -- to very complex `Command`s -- which may involve multiple requests and multiple receivers. 
+The pattern allows for everything from a simple `Command` -- which binds
+a specific request to a specific procedure -- to very complex `Command`s
+-- which may involve multiple requests and multiple receivers. 
 
-```
-// Simple
-app.openUsingDialogue()
+``` // Simple app.openUsingDialogue()
 
 // Complex
 name = dialogue.selectFile();
