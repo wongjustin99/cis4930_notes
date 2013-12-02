@@ -71,3 +71,14 @@ something from its parent
     kerning in between glyphs using a decorator
     * kerning applied only on right side in order to keep horisontal
       alignment
+
+* variable kerning, where big letters take up more space versus small
+  space
+  - trung: important to make it clearer
+
+* finish documentation
+* drop in UML documents
+* practise ya speech yo
+  - get 6 minutes
+
+
